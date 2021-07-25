@@ -1,6 +1,6 @@
 Dim oPlayer
 Set oPlayer = CreateObject("WMPlayer.OCX")
-oPlayer.URL = "D:\Egor\Dropbox\EgorFiles\Documents\important!!!\sus.mp3"
+oPlayer.URL = "sus.mp3"
 oPlayer.controls.play 
 While oPlayer.playState <> 1 
   WScript.Sleep 100
