@@ -4,5 +4,5 @@ msgbox"logged in!"
 else
 msgbox"Wrong Password!"
 Set WshShell = WScript.CreateObject ("WScript.Shell")
-WshShell.Run ("Password.vbs")
+WshShell.Run ("pass.vbs")
 end if
