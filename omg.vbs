@@ -64,7 +64,7 @@ wshshell.sendkeys "u"
 WScript.sleep 200
 wshshell.sendkeys " "
 WScript.sleep 200
-wshshell.sendkeys "S"
+wshshell.sendkeys "s"
 WScript.sleep 200
 wshshell.sendkeys "h"
 WScript.sleep 200
